@@ -15,6 +15,8 @@
 
 [德国之声](lists/德国之声.md)
 
+[中国数字时代](https://github.com/duty-machine/chinadigitaltimes/blob/master/README.md)
+
 鸣谢
 ------
 
