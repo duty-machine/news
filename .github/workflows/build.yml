@@ -1,0 +1,30 @@
+on:
+  schedule:
+    - cron:  '0 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: actions/setup-node@v2-beta
+      with:
+        node-version: '14'
+
+    - uses: actions/cache@v2
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - run: |
+        npm install
+        node perform.js
+        git config --local user.email "you@example.com"
+        git config --local user.name "Your Name"
+        git add .
+        git commit -m 'update'
+        git push origin master
