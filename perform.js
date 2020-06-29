@@ -19,8 +19,8 @@ async function fetchArticles(site) {
   let articles
   if (feedxUrls[site]) {
     articles = await fetchFeedx(site, feedxUrls[site])
-  } else if (site == '中国数字时代') {
-    articles = await fetchCDT()
+//  } else if (site == '中国数字时代') {
+//    articles = await fetchCDT()
   } else if (site == '自由亚洲电台') {
     articles = await fetchRFA()
   }
@@ -61,10 +61,34 @@ async function fetchCDT() {
       title: item.title,
       content: item['content:encoded'],
       link: item.link,
+      guid: item.guid,
       pubDate: Date.parse(item.pubDate),
       site: '中国数字时代'
     }
   })
+}
+
+async function performCDT() {
+  let site = '中国数字时代'
+  try {
+    let siteFolder = `./articles/${site}`
+    fs.mkdirSync(siteFolder, { recursive: true })
+
+    let articles = await fetchCDT()
+
+    articles.map(a => {
+      let id = 0
+      if (match = a.guid.match(/\?p=(\d+)/)) {
+        id = 0xFFFFF ^ (+match[1])
+      }
+
+      generateArticle(a, id)
+    })
+
+    generateList(site)
+  } catch(e) {
+    console.log([site, e])
+  }
 }
 
 async function fetchRFA() {
@@ -88,7 +112,7 @@ async function perform() {
   sites.map(site => {
     performSite(site)
   })
-  performSite('中国数字时代')
+  performCDT()
   performSite('自由亚洲电台')
 }
 
