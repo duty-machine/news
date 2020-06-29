@@ -44,7 +44,25 @@ async function fetchFeedx(site, url) {
 }
 
 async function fetchCDT() {
+  let parser = new Parser()
+  let feed = await parser.parseURL('https://chinadigitaltimes.net/chinese/feed/')
 
+  let emojiRegexp = /(\u00a9|\u00ae|[\u2000-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/
+
+  let validArticles = feed.items.filter(item => {
+    let categories = item.categories.filter(c => c.match(emojiRegexp))
+    return categories.length > 0
+  })
+
+  return validArticles.map(item => {
+    return {
+      title: item.title,
+      content: item['content:encoded'],
+      link: item.link,
+      pubDate: Date.parse(item.pubDate),
+      site: '中国数字时代'
+    }
+  })
 }
 
 async function perform() {
@@ -53,6 +71,7 @@ async function perform() {
   sites.map(site => {
     performSite(site)
   })
+  performSite('中国数字时代')
 }
 
 async function performSite(site) {
