@@ -4,80 +4,99 @@ let querystring = require('querystring')
 let urlMod = require('url')
 let URL = urlMod.URL
 
-let feeds = [
-  ['路透', 'https://feedx.net/rss/reuters.xml'],
-  ['纽约时报', 'https://feedx.net/rss/nytimes.xml'],
-  ['美国之音', 'https://feedx.net/rss/mgzy1.xml'],
-  ['金融时报', 'https://feedx.net/rss/ft.xml'],
-  ['BBC', 'https://feedx.net/rss/bbc.xml'],
-  ['法广', 'https://feedx.net/rss/rfi.xml'],
-  ['德国之声', 'https://feedx.net/rss/dw.xml']
-]
+let feedxUrls = {
+  '路透': 'https://feedx.net/rss/reuters.xml',
+  '纽约时报': 'https://feedx.net/rss/nytimes.xml',
+  '美国之音': 'https://feedx.net/rss/mgzy1.xml',
+  '金融时报': 'https://feedx.net/rss/ft.xml',
+  'BBC': 'https://feedx.net/rss/bbc.xml',
+  '法广': 'https://feedx.net/rss/rfi.xml',
+  '德国之声': 'https://feedx.net/rss/dw.xml'
+}
 
-async function fetchArticles() {
-  let promises = feeds.map(async ([name, url]) => {
-    let parser = new Parser()
-    let feed = await parser.parseURL(url)
+async function fetchArticles(site) {
 
-    return feed.items.map(item => {
-      return {
-        title: item.title,
-        content: item.content,
-        link: item.link,
-        pubDate: Date.parse(item.pubDate),
-        site: name
-      }
-    })
-  })
+  let articles
+  if (feedxUrls[site]) {
+    articles = await fetchFeedx(site, feedxUrls[site])
+  } else if (site == '中国数字时代') {
+    articles = await fetchCDT()
+  }
 
-  let values = await Promise.all(promises)
-
-  let articles = values.reduce((a, x) => a.concat(x)).sort((x, y) => x.pubDate - y.pubDate)
+  articles.sort((x, y) => x.pubDate - y.pubDate)
 
   return articles
 }
 
-async function perform() {
-  let last = JSON.parse(fs.readFileSync('./last', 'utf8'))
-  lastId = last.id
-  lastTime = last.time
+async function fetchFeedx(site, url) {
+  let parser = new Parser()
+  let feed = await parser.parseURL(url)
 
-  let fetchedArticles = await fetchArticles()
-
-  fetchedArticles.filter(x => x.pubDate > lastTime).map(article => {
-    lastId += 1
-    lastTime = article.pubDate
-    generateArticle(article, lastId)
+  return feed.items.map(item => {
+    return {
+      title: item.title,
+      content: item.content,
+      link: item.link,
+      pubDate: Date.parse(item.pubDate),
+      site: site
+    }
   })
+}
 
-  fs.writeFileSync('./last', JSON.stringify({id: lastId, time: lastTime}))
-
-  generateLists()
+async function fetchCDT() {
 
 }
 
-function generateLists() {
-  let folders = fs.readdirSync('./articles')
-  let sites = folders.map(folder => [folder, fs.readdirSync(`./articles/${folder}`)])
-  sites.map(([site, articles]) => {
-    generateList(site, articles)
+async function perform() {
+  let sites = Object.keys(feedxUrls)
+
+  sites.map(site => {
+    performSite(site)
   })
+}
+
+async function performSite(site) {
+  try {
+    let siteFolder = `./articles/${site}`
+    fs.mkdirSync(siteFolder, { recursive: true })
+
+    let files = fs.readdirSync(siteFolder)
+
+    let lastId, lastDate
+    if (files.length > 0) {
+      let lastArticle = fs.readFileSync(`${siteFolder}/${files[0]}`, 'utf8')
+      lastDate = +lastArticle.match(/<!--(\d+)-/)[1]
+      lastId = +files[0].match(/(\d+)_/)[1]
+    } else {
+      lastId = 0xFFFFF
+      lastDate = 0
+    }
+
+    let articles = await fetchArticles(site)
+
+    articles.filter(x => x.pubDate > lastDate).map(a => {
+      lastId -= 1
+      generateArticle(a, lastId)
+    })
+
+    generateList(site)
+  } catch(e) {
+    console.log([site, e])
+  }
 }
 
 function generateArticle(article, id) {
   let md = renderMD(article)
 
-  id = 0xFFFFF ^ id
-
   let filename = `${id}_${article.title}.md`.replace(/\//g, '--')
-  fs.mkdirSync(`./articles/${article.site}`, { recursive: true })
   fs.writeFileSync(`./articles/${article.site}/${filename}`, md)
 }
 
-function generateList(site, articles) {
-  let articleList = articles.slice(0, 100)
+function generateList(site) {
+  let siteFolder = `./articles/${site}`
+  let files = fs.readdirSync(siteFolder).slice(0, 100)
 
-  let listItems = articleList.map(item => {
+  let listItems = files.map(item => {
     let title = item.match(/\d+_(.+)\.md/)[1]
     return `[${title}](/articles/${urlMod.resolve('', `${site}/${item}`)})\n`
   })
@@ -89,7 +108,6 @@ ${list}
 
 [查看更多](/articles/${site})`
   fs.writeFileSync(`./lists/${site}.md`, md)
-
 }
 
 function strip(str) {
