@@ -15,9 +15,11 @@
 
 [德国之声](lists/德国之声.md)
 
-[中国数字时代](https://github.com/duty-machine/chinadigitaltimes/blob/master/README.md)
+[中国数字时代](lists/中国数字时代.md)
 
 鸣谢
 ------
 
 https://feedx.net/
+
+如果本项目对你有帮助，请考虑捐赠feedx，谢谢！
