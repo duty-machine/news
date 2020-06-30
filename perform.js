@@ -159,7 +159,7 @@ function generateList(site) {
 
   let listItems = files.map(item => {
     let title = item.match(/^\d+_([\s\S]+)\.md$/)[1]
-    return `[${title}](/articles/${urlMod.resolve('', `${site}/${item}`)})\n`
+    return `[${strip(title)}](/articles/${urlMod.resolve('', `${site}/${item}`)})\n`
   })
   let list = listItems.join("\n")
   let md = `${site}
