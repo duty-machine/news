@@ -159,7 +159,13 @@ function generateList(site) {
 
   let listItems = files.map(item => {
     let title = item.match(/^\d+_([\s\S]+)\.md$/)[1]
-    return `[${strip(title)}](/articles/${urlMod.resolve('', `${site}/${item}`)})\n`
+    let timestamp = fs.readFileSync(`${siteFolder}/${item}`, 'utf8').match(/<!--(\d+)-/)
+    let date = ''
+    if (timestamp) {
+      let gmtPlus8 = new Date(+timestamp[1] + 8 * 60 * 60 * 1000)
+      date = `${gmtPlus8.getUTCMonth() + 1}-${gmtPlus8.getUTCDate()} `
+    }
+    return `${date}[${strip(title)}](/articles/${urlMod.resolve('', `${site}/${item}`)})\n`
   })
   let list = listItems.join("\n")
   let md = `${site}
@@ -177,7 +183,7 @@ function strip(str) {
 
 function renderMD(item) {
   return `<!--${item.pubDate}-->
-[${item.title}](${new URL(item.link).href})
+[${strip(item.title)}](${new URL(item.link).href})
 ------
 
 ${item.content.split("\n").map(line => strip(line)).join('')}
