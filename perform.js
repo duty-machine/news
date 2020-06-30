@@ -158,7 +158,7 @@ function generateList(site) {
   let files = fs.readdirSync(siteFolder).slice(0, 100)
 
   let listItems = files.map(item => {
-    let title = item.match(/\d+_(.+)\.md/)[1]
+    let title = item.match(/^\d+_([\s\S]+)\.md$/)[1]
     return `[${title}](/articles/${urlMod.resolve('', `${site}/${item}`)})\n`
   })
   let list = listItems.join("\n")
