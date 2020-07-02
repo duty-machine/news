@@ -1,0 +1,5 @@
+<!--1593687323000-->
+[Google拟收购Fitbit 20个NGO痛批威胁隐私 – 法国国际广播电台 - RFI](http://www.rfi.fr//cn/contenu/20200702-google%E6%8B%9F%E6%94%B6%E8%B4%ADfitbit-20%E4%B8%AAngo%E7%97%9B%E6%89%B9%E5%A8%81%E8%83%81%E9%9A%90%E7%A7%81)
+------
+
+<div>02/07/2020 - 10:50</div><img src="https://s.rfi.fr/media/display/20203dea-bc49-11ea-ba19-005056a98db9/w:310/p:16x9/eco0003b.200702165001.jpg"><div class="t-content__body u-clearfix"><div class="m-interstitial"></div><p>（法新社布鲁塞尔2日电）    搜寻龙头谷歌（Google）传出将收购穿戴式装置公司Fitbit，国际性消费者倡议机构与多个非政府（NGO）组织今天谴责说，此举会威胁隐私，让Google不公平地进入新市场。</p><p>    去年11月有消息披露，Google将以21亿美元收购Fitbit，敲响全球主管机关对反托拉斯（antitrust）与隐私权的警钟。</p><p>    一则声明指出，20个非政府组织「有重大疑虑」，担心这宗收购「会改变游戏规则，不只改变人们与线上世界的互动，也会改变数位市场和相关的健康市场」。</p><p>    他们说，这是战胜大型科技公司的「测试案例」，「因此世界各地的主管机关...必须高度重视」。</p><p>    谴责Google的包括欧洲消费者组织（BEUC）、美国消费者联合会（Consumer Federation of America），以及墨西哥、巴西和澳洲的数位权利组织。</p><p>    欧洲联盟（EU）主管机关尤其担心矽谷大型企业会利用银弹攻势打进新领域，扼杀竞争。他们将在7月20日对此案做出决定。（译者：郑诗韵/核稿：陈政一）</p><p></p><p class="t-copyright">© 2020 AFP</p>        </div>
