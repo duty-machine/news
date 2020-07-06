@@ -1,0 +1,5 @@
+<!--1594054585000-->
+[WhatsApp暂不提供港府用户端资讯 – 法国国际广播电台 - RFI](http://www.rfi.fr//cn/contenu/20200706-whatsapp%E6%9A%82%E4%B8%8D%E6%8F%90%E4%BE%9B%E6%B8%AF%E5%BA%9C%E7%94%A8%E6%88%B7%E7%AB%AF%E8%B5%84%E8%AE%AF)
+------
+
+<div>06/07/2020 - 17:20</div><img src="https://s.rfi.fr/media/display/bacdee38-bf9f-11ea-871c-005056bf87d6/w:310/p:16x9/int0017b.200706232003.jpg"><div class="t-content__body u-clearfix"><div class="m-interstitial"></div><p>（法新社香港6日电）    脸书（Facebook）与旗下的讯息服务WhatsApp今天表示，他们将暂停接受香港政府与执法部门索取用户端资讯的请求。</p><p>    脸书发言人发表声明说，暂停期间将等候针对中国在香港实施国家安全法的「进一步评估」，并包括「正式的人权尽职调查以及与人权专家的谘商」。</p><p>    数位权利组织ProPrivacy称此举是「香港地区数位隐私和人权的胜利」。</p><p>    ProPrivacy表示：「在风险如此之高、惩罚如此严厉的情况下，看到WhatsApp这样的大型科技公司能够顶住，力挺民主和言论自由，这是个好消息。」</p><p>    不过ProPrivacy另提及，此举可能导致WhatsApp在香港被封锁，犹如这家公司在中国的遭遇。</p><p class="t-copyright">© 2020 AFP</p>        </div><br><hr><div>获取更多RSS：<br><a href="https://feedx.net" style="color:orange" target="_blank">https://feedx.net</a> <br><a href="https://feedx.xyz" style="color:orange" target="_blank">https://feedx.xyz</a><br></div>
