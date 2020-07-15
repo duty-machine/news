@@ -1,0 +1,5 @@
+<!--1594821377000-->
+[Google看好印度电商市场 斥资45亿美元入股Jio – 法国国际广播电台 - RFI](http://www.rfi.fr//cn/contenu/20200715-google%E7%9C%8B%E5%A5%BD%E5%8D%B0%E5%BA%A6%E7%94%B5%E5%95%86%E5%B8%82%E5%9C%BA-%E6%96%A5%E8%B5%8445%E4%BA%BF%E7%BE%8E%E5%85%83%E5%85%A5%E8%82%A1jio)
+------
+
+<div>15/07/2020 - 14:35</div><img src="https://s.rfi.fr/media/display/79d8132e-c6a0-11ea-abd5-005056bf87d6/w:310/p:16x9/eco0008b.200715203503.jpg"><div class="t-content__body u-clearfix"><div class="m-interstitial"></div><p>（法新社孟买15日电）    为抢占印度庞大电商市场商机，科技巨擘Google将以45亿美元（约新台币1330亿元）入股印度企业龙头信实集团旗下数位事业；双方也将合作开发入门款智慧型手机。</p><p>    印度首富穆克什．安巴尼（Mukesh Ambani）的信实工业（Reliance Industries）从石油及能源产业跨足电信网路业，安巴尼今天在年度股东大会上告诉股东，「我们非常欢迎在印度和国际上都家喻户晓的Google，且已签署具拘束力的合伙及投资协议」，Google在信实工业旗下Jio Platforms持股将占7.7%。</p><p>    安巴尼企图与美国大型企业亚马逊（Amazon）、沃尔玛（Walmart）竞逐正在成长的印度线上零售业版图，脸书（Facebook）、英特尔（Intel）等业界主要厂商今年已向Jio Platforms注资约150亿美元。</p><p>    此外，信实工业与Google也将合作开发使用安卓作业系统的入门款智慧型手机，目标为印度13亿人口提供快速上网管道。</p><p>    Google执行长皮查伊（Sunder Pichai）透过预录影片在会中表示：「数以百万计的印度人可藉由便宜的智慧型手机及数据上网，而Jio在其中扮演重要角色。我们的目标是让十亿印度人能够上网。」（译者：廖禹扬/核稿：刘学源）</p><p class="t-copyright">© 2020 AFP</p>        </div>
