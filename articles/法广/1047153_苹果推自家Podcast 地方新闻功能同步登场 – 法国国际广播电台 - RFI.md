@@ -1,0 +1,5 @@
+<!--1594889633000-->
+[苹果推自家Podcast 地方新闻功能同步登场 – 法国国际广播电台 - RFI](http://www.rfi.fr//cn/contenu/20200716-%E8%8B%B9%E6%9E%9C%E6%8E%A8%E8%87%AA%E5%AE%B6podcast-%E5%9C%B0%E6%96%B9%E6%96%B0%E9%97%BB%E5%8A%9F%E8%83%BD%E5%90%8C%E6%AD%A5%E7%99%BB%E5%9C%BA)
+------
+
+<div>16/07/2020 - 09:20</div><img src="https://s.rfi.fr/media/display/698607e4-c739-11ea-8c96-005056bff430/w:310/p:16x9/int0007b.200716152006.jpg"><div class="t-content__body u-clearfix"><div class="m-interstitial"></div><p>（法新社旧金山15日电）    苹果公司（Apple Inc.）今天首度推出自家的News Podcast，抢攻Podcast市场的野心一览无遗，即使Podcast市场竞争已进入白热化。</p><p>    苹果公司如今将推出全新的音频功能，让读者能在Apple News应用程式上「收听」新闻内容，合作对象包含君子杂志（Esquire）、运动画刊（Sports Illustrated）、时代杂志（Time）、连线杂志（Wired），以及华尔街日报（The Wall Street Journal），所有语音内容皆由专业配音员亲自操刀。</p><p>    Apple News总编辑克恩（Lauren Kern）告诉法新社：「Apple News在新闻工作方面表现卓越，我们也很开心能以全新方式，透过Apple News+音频故事及每日新闻快报等服务，让新闻变得更生动有趣。」</p><p>    苹果公司表示，已开始针对美国若干地区提供「地方新闻精选」服务，内容更加贴近当地热门话题。</p><p>    克恩表示：「我们新的地方新闻精选着重于当地的人事物及发生的趣闻。」</p><p>    Apple News在美国、加拿大、英国及澳洲等地已拥有超过1.25亿月活跃用户。（实习编译：李昕颐/核稿：刘文瑜）</p><p class="t-copyright">© 2020 AFP</p>        </div>
