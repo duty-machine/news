@@ -1,0 +1,5 @@
+<!--1594929367000-->
+[富裕精英被控性侵  埃及再掀MeToo运动 – 法国国际广播电台 - RFI](http://www.rfi.fr//cn/contenu/20200716-%E5%AF%8C%E8%A3%95%E7%B2%BE%E8%8B%B1%E8%A2%AB%E6%8E%A7%E6%80%A7%E4%BE%B5-%E5%9F%83%E5%8F%8A%E5%86%8D%E6%8E%80metoo%E8%BF%90%E5%8A%A8)
+------
+
+<div>16/07/2020 - 20:05</div><img src="https://s.rfi.fr/media/display/1900d0ae-c79a-11ea-8386-005056bff430/w:310/p:16x9/int0002b.200717020501.jpg"><div class="t-content__body u-clearfix"><div class="m-interstitial"></div><p>（法新社开罗16日电）    数十名女性站出来指控遭一名埃及富裕精英成员性侵和攻击后，埃及再掀起「#我也是」（#MeToo）反性侵和反性骚扰运动。</p><p>    法新社报导，埃及是极为保守国家，这次掀起的「#我也是」运动，强度前所未见，让当局开始采取更坚定立场。</p><p>    近几天在Instagram「攻击警察」（Assault Police）上，22岁男子萨基（Ahmed Bassam Zaki）被指控性侵。萨基曾就读埃及若干最顶尖学校和大学。</p><p>    对萨基的指控包括在社区健身房性侵女性、发送淫秽讯息和勒索女子等，部分受害人是年仅14岁女孩。</p><p>    警方于7月4日逮捕萨基。据检方表示，萨基承认曾攻击至少6名女孩并勒索受害人。</p><p>    萨基正等待受审，但本案已引发一波其他投诉。</p><p class="t-copyright">© 2020 AFP</p>        </div><br><hr><div>获取更多RSS：<br><a href="https://feedx.net" style="color:orange" target="_blank">https://feedx.net</a> <br><a href="https://feedx.xyz" style="color:orange" target="_blank">https://feedx.xyz</a><br></div>
