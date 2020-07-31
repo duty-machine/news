@@ -1,0 +1,5 @@
+<!--1596172998000-->
+[法国电信大亨Patrick Drahi发声力挺华为 称华为5G移动设备是最好的](https://cn.reuters.com/article/france-tycoon-huawei-0730-support-idCNKCS24W0I7)
+------
+
+<div><i>2020-07-31T05:02:42</i></div><div class="StandardArticleBody_body"><p>路透巴黎7月30日 - Altice Europe(<span id="symbol_ATCA.AS_0"><a href="//www.reuters.com/companies/ATCA.AS">ATCA.AS</a></span>)的大股东周四表示，华为是最好的5G移动设备制造商。目前美国向欧洲施加越来越大的压力，要求欧洲避免使用华为产品。 </p><p>消息人士上周对路透表示，法国实际上打算将华为设备逐步清除出移动网络。Altice Europe拥有法国第二大电信运营商SFR。 </p><p>SFR在其移动网络上使用华为设备。 </p><p>“对我来说，华为是最好的，”法国电信大亨Patrick Drahi在电话中对分析师表示，“华为的设备不是最便宜的...却是最好的。” </p><p>“我不负责国家安全。如果政府不希望我们使用这样或那样的供应商，我没意见，”他补充道。“这是非常政治化的东西。正在讨论当中。我很乐观。”(完) </p><div class="Attribution_container"><div class="Attribution_attribution"><p class="Attribution_content">编译 艾茂林; 审校 王兴亚 </p></div></div><div class="StandardArticleBody_trustBadgeContainer"><span class="StandardArticleBody_trustBadgeTitle">我们的标准：</span><span class="trustBadgeUrl"><a href="https://www.thomsonreuters.cn/content/dam/openweb/documents/pdf/china/brochures/about-us-1.pdf">汤森路透“信任原则”</a></span></div></div>
