@@ -1,0 +1,5 @@
+<!--1600358094000-->
+[微博称保护逝者账号 可能涉李文亮&quot;哭墙&quot;](http://www.rfi.fr//cn/%E4%B8%AD%E5%9B%BD/20200917-%E5%BE%AE%E5%8D%9A%E7%A7%B0%E4%BF%9D%E6%8A%A4%E9%80%9D%E8%80%85%E8%B4%A6%E5%8F%B7-%E5%8F%AF%E8%83%BD%E6%B6%89%E6%9D%8E%E6%96%87%E4%BA%AE-%E5%93%AD%E5%A2%99)
+------
+
+<div>17/09/2020 - 16:47</div><img src="https://s.rfi.fr/media/display/de2c3c54-9911-11ea-9e49-005056bf18d4/w:310/p:16x9/zb-1.jpg"><p><strong>新浪微博今天报告称为了保护逝者隐私，将对逝者账号设置保护状态，禁止登录、发布或删除内容。此决定可能影响李文亮生前的微博号。</strong></p><div class="t-content__body u-clearfix"><p>据联合早报今天引述消息报道，微博将保护逝者账号：不能发布或删除内容。</p><p>该报道引据《新京报》消息，微博9月17日通告，为保护逝者隐私，防止逝者账号被盗，站方将对逝者账号设置保护状态。设置为保护状态的账号不能登录、不能新发内容、不能删除内容、不能更改状态。在确认逝者账号方面，当用户反馈的疑似逝者账号时，微博站方要求该反馈用户提供个人身份证明、与逝者之间关系证明、逝者死亡证明等证明材料，相关材料一经审核确认，站方将对该账号设置保护状态。</p><p>如果逝者账号在设置保护状态前被盗，站方会进行核实，确认被盗后可还原个人信息，删除被盗之后发布的微博内容，并设置保护状态。</p><div class="o-self-promo o-self-promo--nl o-self-promo--hidden" data-selfpromo-newsletter></div><div class="o-self-promo o-self-promo--app o-self-promo--hidden" data-selfpromo-app></div></div>
