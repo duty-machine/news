@@ -1,0 +1,5 @@
+<!--1600466239000-->
+[NBA公鹿球星字母哥连庄 第2年荣获年度MVP – 法国国际广播电台 - RFI](http://www.rfi.fr//cn/contenu/20200918-nba%E5%85%AC%E9%B9%BF%E7%90%83%E6%98%9F%E5%AD%97%E6%AF%8D%E5%93%A5%E8%BF%9E%E5%BA%84-%E7%AC%AC2%E5%B9%B4%E8%8D%A3%E8%8E%B7%E5%B9%B4%E5%BA%A6mvp)
+------
+
+<div>18/09/2020 - 22:35</div><img src="https://s.rfi.fr/media/display/46338d16-f9f2-11ea-aab9-005056a98db9/w:310/p:16x9/spo0001b.200919043501.jpg"><div class="t-content__body u-clearfix"><p>（法新社洛杉矶18日电）    美国职篮NBA密尔瓦基公鹿球星「字母哥」安特托昆博（Giannis Antetokounmpo）今天获选年度最有价值球员（MVP），连续第2年获得这项殊荣。</p><p>    这位生于希腊，绰号「希腊怪物」（Greek Freak）的25岁篮球巨星，是NBA史上第3位同一球季荣获最佳防守球员及年度MVP的球员。此前，只有1988年乔丹（Michael Jordan），以及1994年欧拉朱万（Hakeem Olajuwon）获此荣誉。</p><p>    安特托昆博也是第12位连续两年获选MVP的球星，之前11位分别是乔丹、柯瑞（Stephen Curry）、詹姆斯（LeBron James）、奈许（Steve Nash）、邓肯（Tim Duncan）、魔术强森（Magic Johnson）、大鸟博德（Larry Bird）、马龙（Moses Malone）、贾霸（Kareem Abdul-Jabbar）、张伯伦（Wilt Chamberlain）和罗素（Bill Russell）。</p><p>    安特托昆博在受疫情困扰的球季例行赛中，场均29.5分、13.6篮板和5.6助攻。</p><p>    他这次获得体育记者和广播员85张第一名选票，洛杉矶湖人的詹姆斯获得16张第一名选票，参与决选第3名的休士顿火箭哈登（James Harden）则未获得任何第一名选票。（译者：徐睿承）</p><p class="t-copyright">© 2020 AFP</p>        </div>
