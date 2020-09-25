@@ -1,0 +1,5 @@
+<!--1601045765000-->
+[青年呼吁重启&quot;星期五为未来&quot;保护气候活动](http://www.rfi.fr//cn/%E6%94%BF%E6%B2%BB/20200925-%E9%9D%92%E5%B9%B4%E5%91%BC%E5%90%81%E9%87%8D%E5%90%AF-%E6%98%9F%E6%9C%9F%E4%BA%94%E4%B8%BA%E6%9C%AA%E6%9D%A5-%E4%BF%9D%E6%8A%A4%E6%B0%94%E5%80%99%E6%B4%BB%E5%8A%A8)
+------
+
+<div>25/09/2020 - 16:27</div><img src="https://s.rfi.fr/media/display/618328f4-ff26-11ea-8bdc-005056a98db9/w:310/p:16x9/AP19074473952405.jpg"><p><strong>青年气候活动人士（Friday for Future）周五9月25日呼吁再次行动起来，在全球举行罢课等活动，旨在不让新冠疫情掩盖危害众人的环境危机和青年人的抗争行动。一直到周六会在世界各地举行3千多场环保活动。</strong></p><div class="t-content__body u-clearfix"><p>青年气候活动人士今天呼吁再次行动起来，重启"星期五为未来"保护气候行动，唤醒公众意识，抗议政府没有重视环境危机，也是一年前发起该项活动的继续。</p><p>一直到周六世界各地举行3千多场研讨和游行等活动。</p><p>这些青年气候活动人士指出新冠疫情不能掩盖危害众人的环境危机和青年人为未来的抗争。</p><p>法国的青年气候活动人士呼吁年轻人行动起来，首先于周五午餐时间在校园里举行集会，讨论生态危机。另外，周五和周六在全法国举行的大约三十场有关环境的活动。法国青年的气候行动口号是：停止兴建"不必要的大型项目"。</p><p>本周六也是位于法国西北边鲁昂附件的路博润化学工厂着火引起污染一周年的纪念日。</p><div class="o-self-promo o-self-promo--nl o-self-promo--hidden" data-selfpromo-newsletter></div><div class="o-self-promo o-self-promo--app o-self-promo--hidden" data-selfpromo-app></div></div>
