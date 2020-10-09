@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/duty-machine/chinadigitaltimes-latest#readme",
   "dependencies": {
+    "jsdom": "^16.4.0",
+    "node-fetch": "^2.6.1",
     "rss-parser": "^3.8.0"
   }
 }

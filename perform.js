@@ -3,6 +3,8 @@ let fs = require('fs')
 let querystring = require('querystring')
 let urlMod = require('url')
 let URL = urlMod.URL
+let { JSDOM } = require('jsdom')
+let fetch = require('node-fetch')
 
 let feedxUrls = {
   '路透': 'https://feedx.net/rss/reuters.xml',
@@ -56,16 +58,23 @@ async function fetchCDT() {
     return categories.length > 0
   })
 
-  return validArticles.map(item => {
+  return await Promise.all(validArticles.map(async (item) => {
+    let res = await fetch(item.link)
+    let html = await res.text()
+    let document = new JSDOM(html).window.document
+
+    let content = document.querySelector('div.post-content').innerHTML.split("\n").map(line => strip(line)).join('')
+
     return {
       title: item.title,
-      content: item['content:encoded'],
+      //content: item['content:encoded'],
+      content: content,
       link: item.link,
       guid: item.guid,
       pubDate: Date.parse(item.pubDate),
       site: '中国数字时代'
     }
-  })
+  }))
 }
 
 async function performCDT() {
