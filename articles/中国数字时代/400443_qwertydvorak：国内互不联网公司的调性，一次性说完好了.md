@@ -1,3 +1,4 @@
+<!--1592904848000-->
 [qwertydvorak：国内互不联网公司的调性，一次性说完好了](https://chinadigitaltimes.net/chinese/2020/06/qwertydvorak%ef%bc%9a%e5%9b%bd%e5%86%85%e4%ba%92%e4%b8%8d%e8%81%94%e7%bd%91%e5%85%ac%e5%8f%b8%e7%9a%84%e8%b0%83%e6%80%a7%ef%bc%8c%e4%b8%80%e6%ac%a1%e6%80%a7%e8%af%b4%e5%ae%8c%e5%a5%bd%e4%ba%86/)
 ------
 日期：Tue, 23 Jun 2020 09:34:08 +0000
