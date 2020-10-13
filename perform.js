@@ -220,7 +220,7 @@ function generateList(site) {
   let listItems = files.map(item => {
     let content = fs.readFileSync(`${siteFolder}/${item}`, 'utf8')
     let timestamp = content.match(/<!--(\d+)-/)
-    let title = content.match(/\[([\s\S]+)\]\(/)[1]
+    let title = content.match(/\[([\s\S]+?)\]\(/)[1]
 
     let date = ''
     if (timestamp) {
