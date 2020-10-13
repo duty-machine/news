@@ -174,7 +174,7 @@ async function performSite(site) {
     if (files.length > 0) {
       let lastArticle = fs.readFileSync(`${siteFolder}/${files[0]}`, 'utf8')
       lastDate = +lastArticle.match(/<!--(\d+)-/)[1]
-      lastId = +files[0].match(/(\d+)_/)[1]
+      lastId = +files[0].match(/(\d+)/)[1]
     } else {
       lastId = 0xFFFFF
       lastDate = 0
@@ -196,7 +196,7 @@ async function performSite(site) {
 function generateArticle(article, id) {
   let md = renderMD(article)
 
-  let filename = `${id}_${article.title}.md`.replace(/\//g, '--')
+  let filename = `${id}.md`.replace(/\//g, '--')
   fs.writeFileSync(`./articles/${article.site}/${filename}`, md)
 }
 
