@@ -6,7 +6,7 @@ let URL = urlMod.URL
 let { JSDOM } = require('jsdom')
 let fetch = require('node-fetch')
 
-let sites = [
+let sitesInfo = [
   {
     name: '路透',
     abbr: 'reuters',
@@ -41,6 +41,14 @@ let sites = [
     name: '德国之声',
     abbr: 'dw',
     feed: 'https://feedx.net/rss/dw.xml'
+  },
+  {
+    name: '自由亚洲电台',
+    abbr: 'rfa'
+  },
+  {
+    name: '中国数字时代',
+    abbr: 'cdt'
   }
 ]
 
@@ -118,7 +126,7 @@ async function fetchCDT() {
 async function performCDT() {
   let site = '中国数字时代'
   try {
-    let siteFolder = `./articles/${site}`
+    let siteFolder = `./articles/cdt`
     fs.mkdirSync(siteFolder, { recursive: true })
 
     let articles = await fetchCDT()
@@ -165,7 +173,8 @@ async function perform() {
 
 async function performSite(site) {
   try {
-    let siteFolder = `./articles/${site}`
+
+    let siteFolder = `./articles/${siteFolderBySiteName(site)}`
     fs.mkdirSync(siteFolder, { recursive: true })
 
     let files = fs.readdirSync(siteFolder)
@@ -193,15 +202,19 @@ async function performSite(site) {
   }
 }
 
+function siteFolderBySiteName(site) {
+  return sitesInfo.find(x => x.name === site).abbr
+}
+
 function generateArticle(article, id) {
   let md = renderMD(article)
 
-  let filename = `${id}.md`.replace(/\//g, '--')
-  fs.writeFileSync(`./articles/${article.site}/${filename}`, md)
+  let filename = `${id}.md`
+  fs.writeFileSync(`./articles/${siteFolderBySiteName(article.site)}/${filename}`, md)
 }
 
 function generateList(site) {
-  let siteFolder = `./articles/${site}`
+  let siteFolder = `./articles/${siteFolderBySiteName(site)}`
   let files = fs.readdirSync(siteFolder).slice(0, 300)
 
   let listItems = files.map(item => {
@@ -214,7 +227,7 @@ function generateList(site) {
       let gmtPlus8 = new Date(+timestamp[1] + 8 * 60 * 60 * 1000)
       date = `${gmtPlus8.getUTCMonth() + 1}-${gmtPlus8.getUTCDate()} `
     }
-    return `${date}[${strip(title)}](/articles/${urlMod.resolve('', `${site}/${item}`)})\n`
+    return `${date}[${strip(title)}](/articles/${urlMod.resolve('', `${siteFolderBySiteName(site)}/${item}`)})\n`
   })
   let list = listItems.join("\n")
   let md = `${site}
