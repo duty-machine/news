@@ -202,7 +202,7 @@ function generateArticle(article, id) {
 
 function generateList(site) {
   let siteFolder = `./articles/${site}`
-  let files = fs.readdirSync(siteFolder).slice(0, 500)
+  let files = fs.readdirSync(siteFolder).slice(0, 300)
 
   let listItems = files.map(item => {
     let content = fs.readFileSync(`${siteFolder}/${item}`, 'utf8')
