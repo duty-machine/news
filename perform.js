@@ -6,6 +6,44 @@ let URL = urlMod.URL
 let { JSDOM } = require('jsdom')
 let fetch = require('node-fetch')
 
+let sites = [
+  {
+    name: '路透',
+    abbr: 'reuters',
+    feed: 'https://feedx.net/rss/reuters.xml'
+  },
+  {
+    name: '纽约时报',
+    abbr: 'nyt',
+    feed: 'https://feedx.net/rss/nytimes.xml'
+  },
+  {
+    name: '美国之音',
+    abbr: 'voa',
+    feed: 'https://feedx.net/rss/mgzy1.xml'
+  },
+  {
+    name: '金融时报',
+    abbr: 'ft',
+    feed: 'https://feedx.net/rss/bbc.xml'
+  },
+  {
+    name: 'BBC',
+    abbr: 'bbc',
+    feed: 'https://feedx.net/rss/bbc.xml'
+  },
+  {
+    name: '法广',
+    abbr: 'rfi',
+    feed: 'https://feedx.net/rss/rfi.xml'
+  },
+  {
+    name: '德国之声',
+    abbr: 'dw',
+    feed: 'https://feedx.net/rss/dw.xml'
+  }
+]
+
 let feedxUrls = {
   '路透': 'https://feedx.net/rss/reuters.xml',
   '纽约时报': 'https://feedx.net/rss/nytimes.xml',
@@ -164,11 +202,13 @@ function generateArticle(article, id) {
 
 function generateList(site) {
   let siteFolder = `./articles/${site}`
-  let files = fs.readdirSync(siteFolder).slice(0, 100)
+  let files = fs.readdirSync(siteFolder).slice(0, 500)
 
   let listItems = files.map(item => {
-    let title = item.match(/^\d+_([\s\S]+)\.md$/)[1]
-    let timestamp = fs.readFileSync(`${siteFolder}/${item}`, 'utf8').match(/<!--(\d+)-/)
+    let content = fs.readFileSync(`${siteFolder}/${item}`, 'utf8')
+    let timestamp = content.match(/<!--(\d+)-/)
+    let title = content.match(/\[([\s\S]+)\]\(/)[1]
+
     let date = ''
     if (timestamp) {
       let gmtPlus8 = new Date(+timestamp[1] + 8 * 60 * 60 * 1000)
@@ -181,8 +221,7 @@ function generateList(site) {
 ------
 
 ${list}
-
-[查看更多](/articles/${site})`
+`
   fs.writeFileSync(`./lists/${site}.md`, md)
 }
 
