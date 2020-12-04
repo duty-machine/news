@@ -193,7 +193,7 @@ async function performSite(site) {
 
     articles.filter(x => x.pubDate > lastDate).map(a => {
       lastId -= 1
-      generateArticle(a, lastId)
+      generateArticle(a, lastId, siteFolder, files)
     })
 
     generateList(site)
@@ -206,10 +206,21 @@ function siteFolderBySiteName(site) {
   return sitesInfo.find(x => x.name === site).abbr
 }
 
-function generateArticle(article, id) {
+function generateArticle(article, id, siteFolder, files) {
+  let filename = `${id}.md`
+
+  if (files) {
+    files.slice(0, 30).map(file => {
+      let article = fs.readFileSync(`${siteFolder}/${file}`, 'utf8')
+      let url = article.match(/\[[\s\S]+?\]\(.+?\)/)[1]
+      if (article.link == url) {
+        filename = file
+      }
+    })
+  }
+
   let md = renderMD(article)
 
-  let filename = `${id}.md`
   fs.writeFileSync(`./articles/${siteFolderBySiteName(article.site)}/${filename}`, md)
 }
 
