@@ -212,8 +212,10 @@ function generateArticle(article, id, siteFolder, files) {
   if (files) {
     files.slice(0, 30).map(file => {
       let article = fs.readFileSync(`${siteFolder}/${file}`, 'utf8')
-      let url = article.match(/\[[\s\S]+?\]\(.+?\)/)[1]
-      if (article.link == url) {
+      let match = article.match(/\[([\s\S]+?)\]\(.+?\)/)
+      let title = match[1]
+      let url = match[2]
+      if (article.link == url || article.title == title) {
         filename = file
       }
     })
