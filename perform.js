@@ -212,7 +212,7 @@ function generateArticle(article, id, siteFolder, files) {
   if (files) {
     files.slice(0, 30).map(file => {
       let article = fs.readFileSync(`${siteFolder}/${file}`, 'utf8')
-      let match = article.match(/\[([\s\S]+?)\]\(.+?\)/)
+      let match = article.match(/\[([\s\S]*?)\]\(.+?\)/)
       let title = match[1]
       let url = match[2]
       if (article.link == url || article.title == title) {
@@ -233,7 +233,7 @@ function generateList(site) {
   let listItems = files.map(item => {
     let content = fs.readFileSync(`${siteFolder}/${item}`, 'utf8')
     let timestamp = content.match(/<!--(\d+)-/)
-    let title = content.match(/\[([\s\S]+?)\]\(/)[1]
+    let title = content.match(/\[([\s\S]*?)\]\(/)[1]
 
     let date = ''
     if (timestamp) {
