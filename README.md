@@ -21,8 +21,3 @@
 https://feedx.net/
 
 如果本项目对你有帮助，请考虑捐赠feedx，谢谢！
-
-友情链接
-------
-
-公益社会类项目汇总： https://github.com/NodeBE4/impact/
